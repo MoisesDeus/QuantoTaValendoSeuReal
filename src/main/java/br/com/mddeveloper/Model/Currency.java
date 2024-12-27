@@ -1,11 +1,11 @@
 package br.com.mddeveloper.Model;
 
-public class CurrencyModel {
+public class Currency {
     private String code;
     private double value;
     private String timestamp;
 
-    public CurrencyModel(String code, double value, String timestamp) {
+    public Currency(String code, double value, String timestamp) {
         this.code = code;
         this.value = value;
         this.timestamp = timestamp;
