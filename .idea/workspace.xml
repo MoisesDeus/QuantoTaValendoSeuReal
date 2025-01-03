@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35cc87cb-ccbc-4ed8-a621-d7231b60eba9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/CurrencyApiClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Model/CurrencyResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/TwitterApiClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Model/TweetRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/CurrencyAplClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/DTO/CurrencyDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/DTO/CurrencyDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Model/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Model/Currency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Service/CurrencyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Service/CurrencyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Model/CurrencyResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Model/CurrencyResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +40,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -58,26 +61,5 @@
       <updated>1735308928108</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/CurrencyApiClient.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/CurrencyApiClient.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

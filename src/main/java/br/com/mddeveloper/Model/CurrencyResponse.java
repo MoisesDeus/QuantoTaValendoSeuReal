@@ -10,8 +10,4 @@ public class CurrencyResponse {
     public Currency getUsdbrl() {
         return usdbrl;
     }
-
-    public void setUsdbrl(Currency usdbrl) {
-        this.usdbrl = usdbrl;
-    }
 }

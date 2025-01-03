@@ -5,25 +5,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Currency {
-//    @JsonProperty("code")
-//    private String USD;
-//    @JsonProperty("codein")
-//    private String BRL;
     @JsonProperty("name")
     private String name;
     @JsonProperty("bid")
     private double value;
     @JsonProperty("create_date")
     private String timestamp;
-
-
-//    public String getUSD() {
-//        return USD;
-//    }
-//
-//    public String getBRL() {
-//        return this.BRL;
-//    }
 
 
     public String getName() {

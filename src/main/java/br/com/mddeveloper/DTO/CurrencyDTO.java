@@ -25,10 +25,9 @@ public class CurrencyDTO {
 
     @Override
     public String toString() {
-        return "CurrencyDTO{" +
-                "formattedName='" + formattedName + '\'' +
-                ", formattedValue='" + formattedValue + '\'' +
-                ", formattedDate='" + formattedDate + '\'' +
-                '}';
+        return "Cotação:" +
+                " " + formattedName + " "
+                + formattedValue + " " +
+                formattedDate;
     }
 }
