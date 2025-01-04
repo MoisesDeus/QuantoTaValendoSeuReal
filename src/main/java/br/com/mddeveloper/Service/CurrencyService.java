@@ -11,9 +11,9 @@ public class CurrencyService {
     public CurrencyDTO formatCurrency(Currency currency) {
         String formattedName = currency.getName().replace("/", " para ");
 
-        String formattedValue = String.format("%.2f BRL", currency.getValue());
+        String formattedValue = String.format(" R$ %.2f BRL ", currency.getValue());
 
-        String formattedDate = new SimpleDateFormat("dd/MM/yyyy ás HH:mm").format(new Date());
+        String formattedDate = new SimpleDateFormat(" dd/MM/yyyy HH:mm").format(new Date());
 
         return new CurrencyDTO(formattedName, formattedValue, formattedDate);
     }

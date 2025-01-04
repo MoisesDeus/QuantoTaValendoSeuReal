@@ -17,7 +17,6 @@ import java.nio.charset.StandardCharsets;
 public class TwitterApiClient {
     private static final Dotenv dotenv = Dotenv.configure().load();
 
-//    private static final String bearerToken = "BEARER_TOKEN";
     private static final String consumerKey = getRequiredEnvVar("TWITTER_API_KEY");
     private static final String consumerKeySecret = getRequiredEnvVar("TWITTER_API_SECRET");
     private static final String accessToken = getRequiredEnvVar("TWITTER_ACCESS_TOKEN");
@@ -77,11 +76,6 @@ public class TwitterApiClient {
             connection.setDoOutput(true);
             System.out.println("Conexão HTTP configurada");
 
-//            HttpRequest.Builder requestBuilder = HttpRequest.newBuilder()
-//                    .uri(URI.create(twitterApi))
-//                    .header("Content-Type", "application/json")
-//                    .POST(HttpRequest.BodyPublishers.ofString(jsonBody));
-
             System.out.println("\n=== Assinando requisição com OAuth ===");
             consumer.sign(connection);
             System.out.println("Requisição assinada");
@@ -102,20 +96,6 @@ public class TwitterApiClient {
             System.out.println("Código de resposta: " + responseCode);
 
             StringBuilder response = new StringBuilder();
-
-//            Map<String, String> headers = new HashMap<>();
-//            consumer.sign(requestBuilder.build());
-//            headers.forEach((key, value) -> requestBuilder.header(key, value));
-//
-//            HttpClient client = HttpClient.newHttpClient();
-//            HttpResponse<String> response = client.
-//                    send(requestBuilder.build(), HttpResponse.BodyHandlers.ofString());
-
-//            if (response.statusCode() == 201) {
-//                System.out.println("Tweet feito com sucesso " + response.body());
-//            } else {
-//                System.err.println("Erro ao enviar o tweet: " + response.body());
-//            }
 
             if (responseCode >= 400) {
                 reader = new BufferedReader(

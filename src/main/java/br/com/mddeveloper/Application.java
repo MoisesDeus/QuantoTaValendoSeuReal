@@ -6,8 +6,6 @@ import br.com.mddeveloper.Model.Currency;
 import br.com.mddeveloper.Service.CurrencyService;
 import br.com.mddeveloper.Service.TwitterService;
 
-import javax.sound.midi.Soundbank;
-
 public class Application {
     public static void main(String[] args) {
         try {

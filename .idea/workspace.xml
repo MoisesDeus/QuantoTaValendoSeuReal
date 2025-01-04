@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35cc87cb-ccbc-4ed8-a621-d7231b60eba9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Service/TwitterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/CurrencyApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/CurrencyApiClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/TwitterApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/TwitterApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/DTO/CurrencyDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/DTO/CurrencyDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Model/TweetRequest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Service/CurrencyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Service/CurrencyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Service/TwitterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Service/TwitterService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
