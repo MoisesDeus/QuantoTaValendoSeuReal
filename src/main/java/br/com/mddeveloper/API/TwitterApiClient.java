@@ -25,10 +25,33 @@ public class TwitterApiClient {
     private static final Dotenv dotenv = Dotenv.configure().load();
 
     private static final String bearerToken = "BEARER_TOKEN";
-    private static final String consumerKey = ;
-    private static final String consumerKeySecret = "API_KEY_SECRET";
-    private static final String accessToken = "ACCESS_TOKEN";
-    private static final String accessTokenSecret = "ACCESS_TOKEN_SECRET";
+    private static final String consumerKey = getRequiredEnvVar("TWITTER_API_KEY");
+    private static final String consumerKeySecret = getRequiredEnvVar("TWITTER_API_SECRET");
+    private static final String accessToken = getRequiredEnvVar("TWITTER_ACCESS_TOKEN");
+    private static final String accessTokenSecret = getRequiredEnvVar("TWITTER_ACCESS_TOKEN_SECRET");
+
+    private static String getRequiredEnvVar(String name) {
+        String value = dotenv.get(name);
+        if (value == null || value.trim().isEmpty()) {
+            throw new IllegalStateException(
+                    "\nVariável de ambiente '" + name + "' não encontrada no arquivo .env\n" +
+                            "Certifique-se de que:\n" +
+                            "1. O arquivo .env existe na raiz do projeto\n" +
+                            "2. A variável " + name + " está definida corretamente no arquivo\n" +
+                            "3. O arquivo .env está no formato correto (CHAVE=VALOR)\n"
+            );
+        }
+        return value;
+    }
+
+    public void verificarConfiguracoes() {
+        System.out.println("\n=== Verificando configurações do Twitter ===");
+        System.out.println("CONSUMER_KEY: " + (consumerKey != null ? "Configurado" : "NÃO CONFIGURADO"));
+        System.out.println("CONSUMER_SECRET: " + (consumerKeySecret != null ? "Configurado" : "NÃO CONFIGURADO"));
+        System.out.println("ACCESS_TOKEN: " + (accessToken != null ? "Configurado" : "NÃO CONFIGURADO"));
+        System.out.println("ACCESS_TOKEN_SECRET: " + (accessTokenSecret != null ? "Configurado" : "NÃO CONFIGURADO"));
+        System.out.println("=========================================\n");
+    }
 
     private static final String twitterApi = "https://api.twitter.com/2/tweets";
 
@@ -39,6 +62,7 @@ public class TwitterApiClient {
         OutputStream outputStream= null;
 
         try {
+            verificarConfiguracoes();
             System.out.println("\n=== Iniciando processo de posting no Twitter ===");
 
             // Log das credenciais (apenas primeiros 4 caracteres para segurança)
