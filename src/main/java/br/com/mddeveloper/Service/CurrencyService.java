@@ -1,6 +1,5 @@
 package br.com.mddeveloper.Service;
 
-import br.com.mddeveloper.API.CurrencyApiClient;
 import br.com.mddeveloper.DTO.CurrencyDTO;
 import br.com.mddeveloper.Model.Currency;
 
@@ -14,7 +13,7 @@ public class CurrencyService {
 
         String formattedValue = String.format("%.2f BRL", currency.getValue());
 
-        String formattedDate = new SimpleDateFormat("dd/MM/yyyy").format(new Date());
+        String formattedDate = new SimpleDateFormat("dd/MM/yyyy ás HH:mm").format(new Date());
 
         return new CurrencyDTO(formattedName, formattedValue, formattedDate);
     }

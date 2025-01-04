@@ -23,6 +23,18 @@ public class CurrencyDTO {
         return formattedDate;
     }
 
+    public void setFormattedName(String formattedName) {
+        this.formattedName = formattedName;
+    }
+
+    public void setFormattedValue(String formattedValue) {
+        this.formattedValue = formattedValue;
+    }
+
+    public void setFormattedDate(String formattedDate) {
+        this.formattedDate = formattedDate;
+    }
+
     @Override
     public String toString() {
         return "Cotação:" +
