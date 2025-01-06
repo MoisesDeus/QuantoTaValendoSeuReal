@@ -6,7 +6,7 @@ import br.com.mddeveloper.Model.Currency;
 import br.com.mddeveloper.Service.CurrencyService;
 import br.com.mddeveloper.Service.TwitterService;
 
-public class Application {
+public class Main {
     public static void main(String[] args) {
         try {
             System.out.println("Iniciando a aplicação...");

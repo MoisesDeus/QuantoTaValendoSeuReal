@@ -39,3 +39,7 @@ build/
 
 # removendo o .env
 .env
+
+cron.log
+
+run.sh
