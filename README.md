@@ -42,7 +42,7 @@ mvn clean package
 java -jar target/seu-projeto-1.0-SNAPSHOT.jar
 ```
 
-Ou execute diretamente pela sua IDE através da classe Application.java.
+Ou execute diretamente pela sua IDE através da classe Main.java.
 
 ## Observações
 
