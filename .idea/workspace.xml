@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35cc87cb-ccbc-4ed8-a621-d7231b60eba9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/CurrencyFifteenApiClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Model/CurrencyFifteen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Service/ChartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/HttpRequestSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/MediaUploader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/OAuthConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/CurrencyApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/CurrencyDailyApiClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/TwitterApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/API/TwitterApiClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/DTO/TweetRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/DTO/TweetRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Service/TwitterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mddeveloper/Service/TwitterService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -84,7 +78,7 @@
       <module name="QuantoTaValendoSeuReal" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.mddeveloper.API.*" />
+          <option name="PATTERN" value="br.com.mddeveloper.Util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
