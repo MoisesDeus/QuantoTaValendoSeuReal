@@ -15,6 +15,8 @@ import java.util.List;
 
 public class ChartService {
     public void generateChart(List<CurrencyFifteen> currencies) {
+        System.setProperty("java.awt.headless", "true");
+
         TimeSeries series = new TimeSeries("USD/BRL");
         for (CurrencyFifteen currency : currencies) {
             long timestampMs = Long.parseLong(currency.getTimestamp()) * 1000;
@@ -29,7 +31,7 @@ public class ChartService {
                 dataset
         );
         try {
-            ChartUtils.saveChartAsPNG(new File("chart.png"), chart, 600, 400);
+            ChartUtils.saveChartAsPNG(new File("chart.png"), chart, 800, 600);
             System.out.println("Gráfico gerado com sucesso em chart.png");
         } catch (Exception e) {
             e.printStackTrace();
