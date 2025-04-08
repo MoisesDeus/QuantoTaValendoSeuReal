@@ -18,7 +18,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>br.com.mddeveloper.Main</mainClass>
+                  <mainClass>br.com.mddeveloper.DailyMain</mainClass>
                 </transformer>
               </transformers>
             </configuration>

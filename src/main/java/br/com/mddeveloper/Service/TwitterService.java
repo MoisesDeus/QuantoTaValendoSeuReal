@@ -18,7 +18,7 @@ public class TwitterService {
         apiClient.post(tweet);
     }
 
-    public postChartTweet(TweetRequestDTO dto) {
+    public void postChartTweet(TweetRequestDTO dto) {
         Tweet tweet = new Tweet(dto.getText());
         apiClient.postWithMedia(tweet, "chart.png");
     }

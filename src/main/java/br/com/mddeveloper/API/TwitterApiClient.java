@@ -47,13 +47,11 @@ public class TwitterApiClient {
     public void postWithMedia(Tweet tweet, String mediaPath) {
         oauthConfig.checkConfigs();
 
-        // Passo 1: Fazer upload da imagem
         String mediaId = mediaUploader.uploadMedia(mediaPath, oauthConfig.getOAuthConsumer());
         if (mediaId == null) {
             throw new RuntimeException("Falha ao fazer upload da imagem.");
         }
 
-        // Passo 2: Postar o tweet com o media_id
         try {
             String jsonBody = String.format(
                     "{\"text\": \"%s\", \"media\": {\"media_ids\": [\"%s\"]}}",

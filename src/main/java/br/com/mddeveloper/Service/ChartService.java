@@ -35,16 +35,4 @@ public class ChartService {
             e.printStackTrace();
         }
     }
-
-    // Método main pra teste isolado
-    public static void main(String[] args) {
-        CurrencyFifteenApiClient apiClient = new CurrencyFifteenApiClient();
-        List<CurrencyFifteen> cotacoes = apiClient.fetchFifteenCurrency();
-        if (cotacoes != null) {
-            ChartService generator = new ChartService();
-            generator.generateChart(cotacoes);
-        } else {
-            System.out.println("Falha ao buscar cotações.");
-        }
-    }
 }

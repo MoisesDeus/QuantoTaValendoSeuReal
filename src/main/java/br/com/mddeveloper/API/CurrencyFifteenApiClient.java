@@ -27,17 +27,4 @@ public class CurrencyFifteenApiClient {
             return null;
         }
     }
-
-    public static void main(String[] args) {
-        CurrencyFifteenApiClient apiClient = new CurrencyFifteenApiClient();
-        List<CurrencyFifteen> cotacoes = apiClient.fetchFifteenCurrency();
-        if (cotacoes != null) {
-            System.out.println("Número de cotações recebidas: " + cotacoes.size());
-            for (CurrencyFifteen cotacao : cotacoes) {
-                System.out.println(cotacao); // Usa o toString do seu model
-            }
-        } else {
-            System.out.println("Falha ao buscar cotações.");
-        }
-    }
 }

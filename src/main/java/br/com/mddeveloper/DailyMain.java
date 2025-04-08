@@ -6,30 +6,28 @@ import br.com.mddeveloper.Model.Currency;
 import br.com.mddeveloper.Service.CurrencyService;
 import br.com.mddeveloper.Service.TwitterService;
 
-public class Main {
+public class DailyMain {
     public static void main(String[] args) {
         try {
-            System.out.println("Iniciando a aplicação...");
+            System.out.println("Iniciando a aplicação (fluxo diário)...");
 
-            CurrencyDailyApiClient apiClient = new CurrencyDailyApiClient();
+            CurrencyDailyApiClient dailyApiClient = new CurrencyDailyApiClient();
             CurrencyService currencyService = new CurrencyService();
             TwitterService twitterService = new TwitterService();
 
             System.out.println("Buscando a cotação atual...");
-            Currency currency = apiClient.getCurrency();
+            Currency currency = dailyApiClient.getCurrency();
 
-            System.out.println("FOrmatando os dados...");
+            System.out.println("Formatando os dados...");
             CurrencyDTO currencyDTO = currencyService.formatCurrency(currency);
 
             System.out.println("Postando no X...");
             twitterService.postCurrencyTweet(currencyDTO);
 
-            System.out.println("Processo finalizaod com sucesso!");
+            System.out.println("Processo diário finalizado com sucesso!");
         } catch (Exception e) {
-            System.err.println("Erro ao executar a aplicação: " + e.getMessage());
+            System.err.println("Erro ao executar a aplicação diária: " + e.getMessage());
             e.printStackTrace();
         }
-
     }
-
 }
