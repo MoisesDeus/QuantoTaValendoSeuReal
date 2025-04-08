@@ -9,7 +9,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class CurrencyApiClient {
+public class CurrencyDailyApiClient {
     public Currency getCurrency() {
         URI url = URI.create(("https://economia.awesomeapi.com.br/last/USD-BRL"));
 

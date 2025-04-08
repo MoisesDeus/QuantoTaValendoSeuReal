@@ -9,6 +9,10 @@ public class TweetRequestDTO {
         this.text = tweet.getText();
     }
 
+    public TweetRequestDTO(String text) {
+        this.text = text;
+    }
+
     public String getText() {
         return text;
     }

@@ -43,3 +43,5 @@ build/
 cron.log
 
 run.sh
+
+chart.png
